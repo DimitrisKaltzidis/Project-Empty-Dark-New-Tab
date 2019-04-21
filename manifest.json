@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Black Empty New Tab",
+  "description":"Opens a new black tab",
+  "version": "1.0",
+
+  "chrome_url_overrides": 
+  {
+	"newtab":"newtab.html"
+  },
+
+  // Pick one (or none)
+  "browser_action": {
+  "default_icon":"logo.png"
+  },
+
+  "permissions": ["tabs"],
+
+  "background": {
+      // Recommended
+      "persistent": false,
+      "scripts":["background.js"]
+    }
+}
